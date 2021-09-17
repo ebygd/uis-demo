@@ -6,7 +6,7 @@ Build this image with
 ```
 docker build -t uis-demo:1.0.0 .
 ```
-If local network is running IPv6, it might be necessary to build using the `host` network, instead of the default `docker` one:
+If local network is running IPv6, it might be necessary to build using the `host` network, instead of the default `docker` one (this is a bug with some versions of Docker):
 ```
 docker build --network host -t uis-demo:1.0.0 .
 ```
